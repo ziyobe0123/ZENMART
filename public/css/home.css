@@ -348,6 +348,7 @@
 
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .product_wrapper .next_prev_box {
@@ -392,7 +393,7 @@
   align-items: center;
 }
 
-.hover_box .button {
+.hover_box button {
   margin-bottom: 10px;
   width: 260px;
   height: 50px;
@@ -424,6 +425,7 @@
   padding: 5px 22px;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
 }
 
 .product_content_box .product_title {
@@ -438,12 +440,14 @@
 }
 
 .product_content_box .product_desc {
+  height: 56px;
   margin-top: 7px;
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
+  overflow: hidden;
 
   color: #041e42;
 }
